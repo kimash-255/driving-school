@@ -38,15 +38,15 @@ const Header = () => {
               <li class="scrollToLink">
                 <Link href="/services">Services</Link>
               </li>
-              <li class="scrollToLink">
+              {/* <li class="scrollToLink">
                 <Link href="/course">Course</Link>
-              </li>
-              <li class="scrollToLink">
+              </li> */}
+              {/* <li class="scrollToLink">
                 <Link href="/testimonial">Testimonial</Link>
-              </li>
-              <li class="scrollToLink">
+              </li> */}
+              {/* <li class="scrollToLink">
                 <Link href="/blog">Blog</Link>
-              </li>
+              </li> */}
               <li class="scrollToLink">
                 <Link href="/contact">Contact</Link>
               </li>
