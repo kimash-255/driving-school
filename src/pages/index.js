@@ -25,7 +25,7 @@ const Home = () => {
       <Skill />
       <Courses />
       <FunFact />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <WorkProcess />
       <Benefits />
       <HomeBlog />
