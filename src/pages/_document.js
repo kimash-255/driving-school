@@ -4,6 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,38 +39,9 @@ export default function Document() {
         {/* <!-- ======== Page title ============ --> */}
         <title>PDX Driving School</title>
 
-        {/* <!-- ========== Favicon Icon ========== --> */}
-        <link
-          rel="shortcut icon"
-          href="/assets/images/favicons/apple-touch-icon.png"
-          type="image/x-icon"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/assets/images/favicons/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/assets/images/favicons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/assets/images/favicons/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
-
         {/* <!-- ===========  All Font ================= --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
@@ -128,11 +102,16 @@ export default function Document() {
           rel="stylesheet"
           href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css"
         />
+
+        {/* <!-- template styles --> */}
+        <link rel="stylesheet" href="/assets/css/drivschol.css" />
       </Head>
-      <body>
+      <body className="antialiased">
         <Main />
         <NextScript />
-        {/* <!-- template styles -->
+        <script src="/assets/vendors/jquery/jquery-3.7.0.min.js" async></script>
+        {/* <!--  Bootstrap js plugins --> */}
+        <script
           src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"
           async
         ></script>
@@ -150,7 +129,11 @@ export default function Document() {
           async
         ></script>
         {/* <!--  jquery-appear js plugins --> */}
-
+        <script
+          src="/assets/vendors/jquery-appear/jquery.appear.min.js"
+          async
+        ></script>
+        {/* <!-- jquery-circle-progress js plugins --> */}
         <script
           src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"
           async
