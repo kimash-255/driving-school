@@ -4,17 +4,37 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="layerdrops" />
+        <meta name="author" content="PDX Driving School" />
         <meta
           name="description"
-          content="PDX Driving School is a modern and versatile driving HTML template. It is specially designed for driving school, car driving, driving classes, training center, online school, education system, online courses, traffic school and all other education school and online driving courses business and websites."
+          content="PDX Driving School offers comprehensive driving courses and training for all levels. Join us to become a confident and skilled driver."
+        />
+        <meta property="og:title" content="PDX Driving School" />
+        <meta
+          property="og:description"
+          content="PDX Driving School offers comprehensive driving courses and training for all levels. Join us to become a confident and skilled driver."
+        />
+        <meta
+          property="og:image"
+          content="https://pdx.mslabdesigns.com/assets/pdx.jpg"
+        />
+        <meta property="og:url" content="https://pdx.mslabdesigns.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PDX Driving School" />
+        <meta
+          name="twitter:description"
+          content="PDX Driving School offers comprehensive driving courses and training for all levels. Join us to become a confident and skilled driver."
+        />
+        <meta
+          name="twitter:image"
+          content="https://pdx.mslabdesigns.com/assets/pdx.jpg"
         />
 
         {/* <!-- ======== Page title ============ --> */}
-        <title>Driving School</title>
+        <title>PDX Driving School</title>
 
         {/* <!-- ========== Favicon Icon ========== --> */}
         <link
@@ -43,7 +63,11 @@ export default function Document() {
 
         {/* <!-- ===========  All Font ================= --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
@@ -104,16 +128,11 @@ export default function Document() {
           rel="stylesheet"
           href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css"
         />
-
-        {/* <!-- template styles --> */}
-        <link rel="stylesheet" href="/assets/css/drivschol.css" />
       </Head>
-      <body className="antialiased">
+      <body>
         <Main />
         <NextScript />
-        <script src="/assets/vendors/jquery/jquery-3.7.0.min.js" async></script>
-        {/* <!--  Bootstrap js plugins --> */}
-        <script
+        {/* <!-- template styles -->
           src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"
           async
         ></script>
@@ -131,11 +150,7 @@ export default function Document() {
           async
         ></script>
         {/* <!--  jquery-appear js plugins --> */}
-        <script
-          src="/assets/vendors/jquery-appear/jquery.appear.min.js"
-          async
-        ></script>
-        {/* <!-- jquery-circle-progress js plugins --> */}
+
         <script
           src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"
           async
