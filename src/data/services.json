@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Instructor Training",
+    "slug": "instructor-training",
+    "description": "Instructor Training equips aspiring driving instructors with the skills and knowledge necessary to teach new drivers effectively.",
+    "image": "/assets/images/service/service-2-1.jpg",
+    "icon": "icon-Expert",
+    "link": "/service/instructor-training",
+    "content": "Instructor Training is designed to equip aspiring driving instructors with the skills and knowledge necessary to teach new drivers effectively. Our program covers a wide range of topics, including road safety, teaching methodologies, and practical driving techniques. With experienced trainers and a comprehensive curriculum, we ensure that our instructors are well-prepared to guide learners through their driving journey. Whether you're new to the field or looking to enhance your skills, our Instructor Training program offers the perfect blend of theory and hands-on experience. Join us today and take the first step toward a rewarding career in driver education."
+  },
+  {
+    "title": "Road Safety Guide",
+    "slug": "road-safety-guide",
+    "description": "Our Road Safety Guide educates drivers on the importance of safe driving practices and mastering defensive driving techniques.",
+    "image": "/assets/images/service/service-2-4.jpg",
+    "icon": "icon-safety",
+    "link": "/service/road-safety-guide",
+    "content": "Our Road Safety Guide is a comprehensive resource designed to educate drivers on the importance of safe driving practices. From understanding traffic laws to mastering defensive driving techniques, this guide covers everything you need to stay safe on the road. We also provide tips for handling adverse weather conditions, navigating busy intersections, and avoiding common driving mistakes. Whether you're a new driver or an experienced one, our Road Safety Guide is an invaluable tool for ensuring your safety and the safety of others. Download the guide today and make road safety a priority in your daily driving routine."
+  },
+  {
+    "title": "Driving License",
+    "slug": "driving-license",
+    "description": "Our Driving License program helps you navigate the process of obtaining a driving license with ease.",
+    "image": "/assets/images/service/service-2-3.jpg",
+    "icon": "icon-license-1",
+    "link": "/service/driving-license",
+    "content": "Obtaining a driving license is a crucial step toward gaining independence on the road. Our Driving License program is designed to help you navigate the process with ease. From preparing for the written test to mastering the practical driving exam, we provide all the resources and support you need to succeed. Our experienced instructors will guide you through every step, ensuring that you're fully prepared to pass your test and hit the road with confidence. Whether you're a first-time applicant or renewing your license, our program is tailored to meet your needs. Start your journey today and take the first step toward becoming a licensed driver."
+  },
+  {
+    "title": "Driver Insurance",
+    "slug": "driver-insurance",
+    "description": "Our Driver Insurance program offers comprehensive coverage options to protect you and your vehicle.",
+    "image": "/assets/images/service/service-2-6.jpg",
+    "icon": "icon-insurance",
+    "link": "/service/driver-insurance",
+    "content": "Driver Insurance is an essential aspect of responsible driving. Our program offers comprehensive coverage options to protect you and your vehicle in the event of an accident or unforeseen circumstances. From liability insurance to full coverage plans, we provide a range of options to suit your needs and budget. Our team of insurance experts will work with you to find the perfect plan, ensuring that you're fully protected on the road. With competitive rates and exceptional customer service, we make it easy to secure the coverage you need. Contact us today to learn more about our Driver Insurance options and drive with peace of mind."
+  },
+  {
+    "title": "Motorcycle Training",
+    "slug": "motorcycle-training",
+    "description": "Motorcycle Training helps riders of all skill levels master the art of safe and efficient motorcycle operation.",
+    "image": "/assets/images/service/service-2-5.jpg",
+    "icon": "icon-motorcycle",
+    "link": "/service/motorcycle-training",
+    "content": "Motorcycle Training is designed to help riders of all skill levels master the art of safe and efficient motorcycle operation. Our program covers everything from basic riding techniques to advanced maneuvers, ensuring that you're prepared for any situation on the road. With experienced instructors and state-of-the-art training facilities, we provide a supportive environment for learning and growth. Whether you're a beginner or an experienced rider looking to refine your skills, our Motorcycle Training program has something for everyone. Join us today and take your riding to the next level."
+  },
+  {
+    "title": "Road Guidelines",
+    "slug": "road-guidelines",
+    "description": "Our Road Guidelines program provides a comprehensive overview of traffic laws, road signs, and driving etiquette.",
+    "image": "/assets/images/service/service-2-2.jpg",
+    "icon": "icon-certificate-1",
+    "link": "/service/road-guidelines",
+    "content": "Understanding and following road guidelines is essential for safe and responsible driving. Our Road Guidelines program provides a comprehensive overview of traffic laws, road signs, and driving etiquette. We also offer tips for navigating complex traffic situations and avoiding common driving mistakes. Whether you're a new driver or an experienced one, our program is designed to help you stay informed and confident on the road. With easy-to-follow instructions and practical examples, our Road Guidelines program is the ultimate resource for safe driving. Enroll today and become a more knowledgeable and responsible driver."
+  }
+]

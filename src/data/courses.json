@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Behind the Wheel Course",
+    "slug": "behind-the-wheel-course",
+    "description": "Gain hands-on driving experience with expert instructors in real-world conditions.",
+    "content": "Our Behind the Wheel Course is designed to provide learners with practical driving skills through hands-on experience on various road types, including residential streets, highways, and busy intersections. This course is ideal for beginners and those looking to refine their driving techniques. Students will learn essential vehicle control, defensive driving strategies, proper braking and acceleration, and how to handle real-world driving scenarios such as merging, lane changes, and navigating intersections. Instructors will provide personalized feedback and guidance, ensuring that each student builds confidence and competence behind the wheel. This course also covers handling emergency situations, understanding road signs, and adapting to different weather conditions. Whether you're preparing for a driving test or simply improving your driving ability, this program will help you become a safe and responsible driver.",
+    "image": "/assets/images/gallery/course-1-1.jpg",
+    "price": 60,
+    "session": "16 Hours",
+    "lessons": 8,
+    "students": 120,
+    "instructor": "Guy Hawkins",
+    "instructorImage": "/assets/images/gallery/author-c-1-1.jpg",
+    "instructorTitle": "Instructor",
+    "benefits": [
+      "Hands-on driving experience in real-world scenarios",
+      "Personalized instruction for skill improvement",
+      "Learn defensive driving and emergency handling",
+      "Develop confidence in diverse driving conditions"
+    ]
+  },
+  {
+    "title": "In-Class Driving Course",
+    "slug": "in-class-driving-course",
+    "description": "Comprehensive classroom-based driving education covering road rules, safety, and theory.",
+    "content": "The In-Class Driving Course is a structured program designed to educate students on traffic laws, road signs, and safe driving principles before they get behind the wheel. This course is perfect for new drivers, learners preparing for a driving test, or experienced drivers looking to refresh their knowledge. Students will explore key topics such as traffic regulations, defensive driving techniques, accident prevention, and road etiquette. The curriculum includes interactive lessons, video simulations, and real-world case studies to enhance understanding. Instructors will guide students through essential theoretical knowledge, ensuring they grasp critical concepts like right-of-way, handling emergencies, and the effects of distractions while driving. By completing this course, students will develop a strong foundation in driving theory, making them well-prepared for both practical driving lessons and written driving exams.",
+    "image": "/assets/images/gallery/course-1-2.jpg",
+    "price": 50,
+    "session": "12 Hours",
+    "lessons": 6,
+    "students": 95,
+    "instructor": "Jane Doe",
+    "instructorImage": "/assets/images/gallery/author-c-1-2.jpg",
+    "instructorTitle": "Senior Instructor",
+    "benefits": [
+      "Thorough understanding of traffic laws and regulations",
+      "Interactive lessons with real-world driving scenarios",
+      "Preparation for written driving exams",
+      "Learn defensive driving principles and accident prevention"
+    ]
+  }
+]
