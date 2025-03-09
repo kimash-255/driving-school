@@ -40,14 +40,14 @@ const Courses = () => {
                       <i className="icon-training"></i>
                       <span>{course.duration}</span>
                     </a>
-                    <div className="course-card__meta">
+                    {/* <div className="course-card__meta">
                       <h4 className="course-card__meta-price">
                         ${course.price}
                       </h4>
                       <span className="course-card__meta-class">
                         PER PERSON
                       </span>
-                    </div>
+                    </div> */}
                     <h3 className="course-card__title">
                       <Link href={`/courses/${course.slug}`}>
                         {course.title}
@@ -60,18 +60,20 @@ const Courses = () => {
 
                   <div className="course-card__bottom">
                     <div className="course-card__author">
-                      <div className="course-card__author-image">
+                      {/* <div className="course-card__author-image">
                         <img
                           src={course.instructorImage}
                           alt={course.instructor}
                         />
-                      </div>
+                      </div> */}
                       <div className="course-card__author-content">
                         <h5 className="course-card__author-name">
-                          <Link href="#">{course.instructor}</Link>
+                          <Link href={`/courses/${course.slug}`}>
+                            Learn more
+                          </Link>
                         </h5>
                         <p className="course-card__author-designation">
-                          {course.instructorTitle}
+                          {/* {course.instructorTitle} */}
                         </p>
                       </div>
                     </div>

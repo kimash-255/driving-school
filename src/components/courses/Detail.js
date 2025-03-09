@@ -27,7 +27,7 @@ const CourseDetail = () => {
     <section className="course-details-one">
       <div className="container">
         <div className="row gutter-x-15">
-          <div className="col-12">
+          {/* <div className="col-12">
             <div
               className="course-details-one__inner wow fadeInUp animated"
               data-wow-delay="300ms"
@@ -66,17 +66,11 @@ const CourseDetail = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="col-lg-8">
             <div className="course-details">
               <div className="course-details__single">
-                <div
-                  className="course-details__image wow fadeInUp animated"
-                  data-wow-delay="300ms"
-                >
-                  <img src={currentCourse?.image} alt="Course Image" />
-                </div>
                 <h3
                   className="course-details__title wow fadeInUp animated"
                   data-wow-delay="300ms"
@@ -88,6 +82,12 @@ const CourseDetail = () => {
                   data-wow-delay="400ms"
                 >
                   {currentCourse?.description}
+                </div>
+                <div
+                  className="course-details__image wow fadeInUp animated"
+                  data-wow-delay="300ms"
+                >
+                  <img src={currentCourse?.image} alt="Course Image" />
                 </div>
                 <div
                   className="course-details__text wow fadeInUp animated"
@@ -180,17 +180,15 @@ const CourseDetail = () => {
                         <img src={course.image} alt="Course Image" />
                       </div>
                       <div className="course-sidebar__nav__two__item__content">
-                        <p className="course-sidebar__nav__two__item__content__name">
+                        {/* <p className="course-sidebar__nav__two__item__content__name">
                           <span>by </span> {course.instructor}
-                        </p>
+                        </p> */}
                         <h5 className="course-sidebar__nav__two__item__content__title">
                           <Link href={`/courses/${course.slug}`}>
                             {course.title}
                           </Link>
                         </h5>
-                        <span className="course-sidebar__nav__two__item__content__price">
-                          ${course.price}
-                        </span>
+                        <p className="">{course.description}</p>
                       </div>
                     </li>
                   ))}
