@@ -1,249 +1,172 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const HomeCourses = () => {
+const CourseCard = ({ course }) => {
   return (
-    <section class="course-one course-two__home" id="course">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
+    <div className="col-lg-6">
+      <div
+        className="course-one__item wow fadeInUp"
+        data-wow-delay={course.delay}
+      >
+        <div className="course-one__item__left">
+          <div className="course-one__item__left__price">
+            <div className="price__box">
+              <span className="course-one__item__left__price__top">
+                {course.lessons} <sub></sub>
+              </span>
+              <p className="course-one__item__left__price__text">Lessons</p>
+            </div>
+          </div>
+          <h3 className="course-one__item__left__title">
+            <Link href="/course">{course.title}</Link>
+          </h3>
+          <p className="course-one__item__left__text">{course.description}</p>
+          <div className="course-one__item__left__author">
+            <Link
+              href="/course"
+              className="course-one__item__left__author__card"
+            >
+              {/* <div className="course-one__item__left__author__thumb">
+                <img
+                  src={course.authorImage}
+                  alt="course-one__item__left__author__thumb"
+                />
+              </div> */}
+              <div className="course-one__item__left__author__content">
+                <h6 className="course-one__item__left__author__name">
+                  {/* {course.authorName} */}
+                  Learn more
+                </h6>
+                <span className="course-one__item__left__author__degeneration">
+                  {/* {course.authorTitle}
+                   */}
+                  About the course
+                </span>
+              </div>
+            </Link>
+            <div className="course-one__item__left__author__link">
+              <Link
+                className="course-one__item__left__author__link__btn"
+                href="/course"
+              >
+                <i className="icon-arrow"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="course-one__item__right">
+          <div className="course-one__item__session">
+            <div className="course-one__item__session__shape">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="113"
+                height="21"
+                viewBox="0 0 113 21"
+                fill="none"
+              >
+                <path
+                  d="M9.42657 0L9.46074 20.4271H0.999014L0.964844 0H9.42657Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M24.243 0L24.268 20.4271H15.8154L15.7812 0H24.243Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M39.0502 0L39.0844 20.4271H30.6227L30.5977 0H39.0502Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M53.866 0L53.9002 20.4271H45.4385L45.4043 0H53.866Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M68.6805 0L68.7055 20.4271H60.2529L60.2188 0H68.6805Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M83.4897 0L83.5239 20.4271H75.0621L75.0371 0H83.4897Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M98.3055 0L98.3396 20.4271H89.8779L89.8438 0H98.3055Z"
+                  fill="#EC2526"
+                />
+                <path
+                  d="M112.305 0L112.34 20.4271H103.878L103.844 0H112.305Z"
+                  fill="#EC2526"
+                />
+              </svg>
+            </div>
+            <p className="course-one__item__session__icon">
+              <i className="icon-seminar-1"></i> {course.session}
+            </p>
+          </div>
+          <Link href="/course" className="course-one__item__img">
+            <img src={course.image} alt="course-one__item__img" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const HomeCourses = () => {
+  const courses = [
+    {
+      lessons: 8,
+      title: "In Class Driving Training",
+      description:
+        "Learn the theoretical aspects of driving in a classroom setting.",
+      authorImage: "/assets/images/resources/testi-1-3.jpg",
+      authorName: "John Doe",
+      authorTitle: "Senior Instructor",
+      session: "16 Hrs Session",
+      image: "/assets/images/course/course-c-3-1.jpg",
+      delay: "300ms",
+    },
+    {
+      lessons: 6,
+      title: "Behind the Wheels Training",
+      description: "Practical driving sessions to enhance your driving skills.",
+      authorImage: "/assets/images/resources/testi-1-7.jpg",
+      authorName: "Jane Smith",
+      authorTitle: "Lead Instructor",
+      session: "20 Hrs Session",
+      image: "/assets/images/course/course-c-3-2.jpg",
+      delay: "500ms",
+    },
+  ];
+
+  return (
+    <section className="course-one course-two__home" id="course">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12">
             <div
-              class="sec-title text-center wow fadeInUp"
+              className="sec-title text-center wow fadeInUp"
               data-wow-duration="300ms"
             >
-              <h6 class="sec-title__tagline">
-                <i class="icon-left-arrow sec-title__img"></i>
+              <h6 className="sec-title__tagline">
+                <i className="icon-left-arrow sec-title__img"></i>
                 See Our Course
-                <i class="icon-right-arrow sec-title__img"></i>
+                <i className="icon-right-arrow sec-title__img"></i>
               </h6>
-              <h3 class="sec-title__title">
+              <h3 className="sec-title__title">
                 Develop Your Driving Skill <br />
                 to Join the Course
               </h3>
             </div>
           </div>
         </div>
-        <div class="row gutter-x-60">
-          <div class="col-lg-6">
-            <div class="course-one__item wow fadeInUp" data-wow-delay="300ms">
-              <div class="course-one__item__left">
-                <div class="course-one__item__left__price">
-                  <div class="price__box">
-                    <span class="course-one__item__left__price__top">
-                      40 <sub>$</sub>
-                    </span>
-                    <p class="course-one__item__left__price__text">
-                      Per Person
-                    </p>
-                  </div>
-                </div>
-                <h3 class="course-one__item__left__title">
-                  <Link href="/course">In Class Driving Training</Link>
-                </h3>
-                <p class="course-one__item__left__text">
-                  Learn the theoretical aspects of driving in a classroom
-                  setting.
-                </p>
-                <div class="course-one__item__left__author">
-                  <Link
-                    href="/course"
-                    class="course-one__item__left__author__card"
-                  >
-                    <div class="course-one__item__left__author__thumb">
-                      <img
-                        src="/assets/images/resources/testi-1-3.jpg"
-                        alt="course-one__item__left__author__thumb"
-                      />
-                    </div>
-                    <div class="course-one__item__left__author__content">
-                      <h6 class="course-one__item__left__author__name">
-                        Guy Hawkins
-                      </h6>
-                      <span class="course-one__item__left__author__degeneration">
-                        Instructor
-                      </span>
-                    </div>
-                  </Link>
-                  <div class="course-one__item__left__author__link">
-                    <Link
-                      class="course-one__item__left__author__link__btn"
-                      href="/course"
-                    >
-                      <i class="icon-arrow"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div class="course-one__item__right">
-                <div class="course-one__item__session">
-                  <div class="course-one__item__session__shape">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="113"
-                      height="21"
-                      viewBox="0 0 113 21"
-                      fill="none"
-                    >
-                      <path
-                        d="M9.42657 0L9.46074 20.4271H0.999014L0.964844 0H9.42657Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M24.243 0L24.268 20.4271H15.8154L15.7812 0H24.243Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M39.0502 0L39.0844 20.4271H30.6227L30.5977 0H39.0502Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M53.866 0L53.9002 20.4271H45.4385L45.4043 0H53.866Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M68.6805 0L68.7055 20.4271H60.2529L60.2188 0H68.6805Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M83.4897 0L83.5239 20.4271H75.0621L75.0371 0H83.4897Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M98.3055 0L98.3396 20.4271H89.8779L89.8438 0H98.3055Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M112.305 0L112.34 20.4271H103.878L103.844 0H112.305Z"
-                        fill="#EC2526"
-                      />
-                    </svg>
-                  </div>
-                  <p class="course-one__item__session__icon">
-                    <i class="icon-seminar-1"></i> 16 Hours Session
-                  </p>
-                </div>
-                <Link
-                  href="/course"
-                  class="course-one__item__img course-one__item__img__two"
-                >
-                  <img
-                    src="/assets/images/course/course-c-3-1.jpg"
-                    alt="course-one__item__img"
-                  />{" "}
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="course-one__item wow fadeInUp" data-wow-delay="500ms">
-              <div class="course-one__item__left">
-                <div class="course-one__item__left__price">
-                  <div class="price__box">
-                    <span class="course-one__item__left__price__top">
-                      60 <sub>$</sub>
-                    </span>
-                    <p class="course-one__item__left__price__text">
-                      Per Person
-                    </p>
-                  </div>
-                </div>
-                <h3 class="course-one__item__left__title">
-                  <Link href="/course">Behind the Wheels Training</Link>
-                </h3>
-                <p class="course-one__item__left__text">
-                  Practical driving sessions to enhance your driving skills.
-                </p>
-                <div class="course-one__item__left__author">
-                  <Link
-                    href="/course"
-                    class="course-one__item__left__author__card"
-                  >
-                    <div class="course-one__item__left__author__thumb">
-                      <img
-                        src="/assets/images/resources/testi-1-7.jpg"
-                        alt="course-one__item__left__author__thumb"
-                      />
-                    </div>
-                    <div class="course-one__item__left__author__content">
-                      <h6 class="course-one__item__left__author__name">
-                        Sara Albert
-                      </h6>
-                      <span class="course-one__item__left__author__degeneration">
-                        Instructor
-                      </span>
-                    </div>
-                  </Link>
-                  <div class="course-one__item__left__author__link">
-                    <Link
-                      class="course-one__item__left__author__link__btn"
-                      href="/course"
-                    >
-                      <i class="icon-arrow"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div class="course-one__item__right">
-                <div class="course-one__item__session">
-                  <div class="course-one__item__session__shape">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="113"
-                      height="21"
-                      viewBox="0 0 113 21"
-                      fill="none"
-                    >
-                      <path
-                        d="M9.42657 0L9.46074 20.4271H0.999014L0.964844 0H9.42657Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M24.243 0L24.268 20.4271H15.8154L15.7812 0H24.243Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M39.0502 0L39.0844 20.4271H30.6227L30.5977 0H39.0502Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M53.866 0L53.9002 20.4271H45.4385L45.4043 0H53.866Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M68.6805 0L68.7055 20.4271H60.2529L60.2188 0H68.6805Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M83.4897 0L83.5239 20.4271H75.0621L75.0371 0H83.4897Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M98.3055 0L98.3396 20.4271H89.8779L89.8438 0H98.3055Z"
-                        fill="#EC2526"
-                      />
-                      <path
-                        d="M112.305 0L112.34 20.4271H103.878L103.844 0H112.305Z"
-                        fill="#EC2526"
-                      />
-                    </svg>
-                  </div>
-                  <p class="course-one__item__session__icon">
-                    <i class="icon-seminar-1"></i> 16 Hours Session
-                  </p>
-                </div>
-                <Link href="/course" class="course-one__item__img">
-                  <img
-                    src="/assets/images/course/course-c-3-2.jpg"
-                    alt="course-one__item__img"
-                  />{" "}
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="row gutter-x-60">
+          {courses.map((course, index) => (
+            <CourseCard key={index} course={course} />
+          ))}
         </div>
       </div>
     </section>
   );
 };
+
 export default HomeCourses;
